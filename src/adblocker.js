@@ -5,12 +5,6 @@
 function removeAds() {
     const ads = document.querySelectorAll("[data-google-query-id]");
     ads.forEach(ad => ad.remove());
-    console.log("Adblocker is working!");
 }
 
-removeAds();
-
-const observer = new MutationObserver(() => {
-    removeAds();
-});
-observer.observe(document.body, { childList: true, subtree: true });
+setInterval(removeAds, 5000)
