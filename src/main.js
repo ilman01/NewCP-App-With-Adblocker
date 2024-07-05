@@ -55,6 +55,7 @@ const createWindow = () => {
     show: false,
     webPreferences: {
       plugins: true,
+      preload: path.join(__dirname, 'adblocker.js'),
     },
   });
 
@@ -80,7 +81,7 @@ const createWindow = () => {
 
   new Promise((resolve) =>
     setTimeout(() => {
-      mainWindow.loadURL("https://newcp.net/");
+      mainWindow.loadURL("https://newcp.net/plays?force=true#/login");
       resolve();
     }, 5000)
   );
