@@ -46,7 +46,7 @@ Loop
     SetKeyDelay, %CurrentKeyDelay%
     
     ; Sleep for 1000 milliseconds
-    Sleep, 900
+    Sleep, 800
 }
 Return
 
