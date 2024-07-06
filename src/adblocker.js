@@ -23,4 +23,4 @@ function removeAds() {
     ads.forEach(ad => ad.remove());
 }
 
-setInterval(removeAds, 5000)
+setInterval(removeAds, 500)
