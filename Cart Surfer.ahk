@@ -16,14 +16,14 @@ Loop
     CurrentKeyDelay := A_KeyDelay
     
     ; Set a new key delay and send events
-    SetKeyDelay, 100
+    SetKeyDelay, 180
     SendEvent, {Down}{Space}
     
     ; Restore the original key delay
     SetKeyDelay, %CurrentKeyDelay%
 
     ; Sleep for 1000 milliseconds
-    Sleep, 900
+    Sleep, 850
 
     ; Check if left or right key is being held down
     if (GetKeyState("Left", "P") or GetKeyState("Right", "P"))
